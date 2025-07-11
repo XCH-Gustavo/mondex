@@ -24,11 +24,9 @@ mixin _$Monster {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   String get description => throw _privateConstructorUsedError;
-  String get originalGame =>
-      throw _privateConstructorUsedError; // required int originalSeriesId,
+  String get originalGame => throw _privateConstructorUsedError;
   String get color => throw _privateConstructorUsedError;
-  String get imageUrl =>
-      throw _privateConstructorUsedError; // required List<String> types,
+  String get imageUrl => throw _privateConstructorUsedError;
   String get types => throw _privateConstructorUsedError;
 
   /// Serializes this Monster to a JSON map.
@@ -215,12 +213,10 @@ class _$MonsterImpl implements _Monster {
   final String description;
   @override
   final String originalGame;
-  // required int originalSeriesId,
   @override
   final String color;
   @override
   final String imageUrl;
-  // required List<String> types,
   @override
   final String types;
 
@@ -293,11 +289,11 @@ abstract class _Monster implements Monster {
   @override
   String get description;
   @override
-  String get originalGame; // required int originalSeriesId,
+  String get originalGame;
   @override
   String get color;
   @override
-  String get imageUrl; // required List<String> types,
+  String get imageUrl;
   @override
   String get types;
 

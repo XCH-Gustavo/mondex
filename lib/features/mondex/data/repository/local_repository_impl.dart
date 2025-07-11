@@ -1,12 +1,12 @@
 import 'package:dartz/dartz.dart';
 import 'package:mondex/core/errors/failure.dart';
 import 'package:mondex/features/mondex/domain/entities/monster.dart';
-import 'package:mondex/features/mondex/domain/repositories/local_repository.dart';
+import 'package:mondex/features/mondex/domain/repositories/monster_repository.dart';
 import '../datasources/local_data_sources.dart';
 import 'package:injectable/injectable.dart';
 
-@LazySingleton(as: LocalRepository)
-class LocalRepositoryImpl implements LocalRepository {
+@LazySingleton(as: MonsterRepository)
+class LocalRepositoryImpl implements MonsterRepository {
   final LocalDataSource _localDataSource;
 
   LocalRepositoryImpl(this._localDataSource);
